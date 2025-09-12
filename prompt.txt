@@ -1,0 +1,45 @@
+This is an telegram BOT that connects people to play with other people 10 questions to check their knowledge on various subjects.
+The questions are genraetd by an ai using api
+Read claude.md to understand the project 
+When done codeing update claude.md
+Make the code as optimsed and as simple as possible 
+
+
+
+UPDATE
+When i select a gmae mode it just says i am not inna quiz
+
+Diamond, [9/12/2025 10:26 PM]
+/start
+
+Quiz Nation, [9/12/2025 10:26 PM]
+👋 Hello Diamond! Welcome to QuizNation!
+
+🎯 This is a quiz bot where you can test your knowledge with 10 questions.
+
+ Type /quiz to start a new quiz!
+
+Diamond, [9/12/2025 10:26 PM]
+/quiz
+
+Quiz Nation, [9/12/2025 10:26 PM]
+🎮 Please select a game mode:
+
+Diamond, [9/12/2025 10:26 PM]
+Single
+
+Quiz Nation, [9/12/2025 10:26 PM]
+🤔 You're not in a quiz right now. Start one with /quiz
+
+Diamond, [9/12/2025 10:26 PM]
+/quiz
+
+Quiz Nation, [9/12/2025 10:26 PM]
+🎮 Please select a game mode:
+
+Diamond, [9/12/2025 10:26 PM]
+Multi
+
+Quiz Nation, [9/12/2025 10:26 PM]
+🤔 You're not in a quiz right now. Start one with /quiz
+
