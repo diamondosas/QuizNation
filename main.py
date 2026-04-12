@@ -1,9 +1,9 @@
 import os
 import logging
 import random
-from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
+from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.constants import ParseMode
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from dotenv import load_dotenv
 
 from ai import generate_quiz_question
@@ -115,8 +115,10 @@ async def handle_msg(update, context):
                     user_states.pop(p, None)
                     await context.bot.send_message(p, res, reply_markup=ReplyKeyboardRemove())
                 delete_session(s_id)
-            else: await send_q(context, s_id)
-        else: await update.message.reply_text("Waiting for opponent...")
+            else: 
+                await send_q(context, s_id)
+        else:
+            await update.message.reply_text("Waiting for opponent...")
 
 def main():
     app = Application.builder().token(TOKEN).build()
