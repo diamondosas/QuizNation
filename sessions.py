@@ -1,4 +1,5 @@
-import time, random, string
+import random 
+import string
 
 class QuizSession:
     def __init__(self, user_id, mode="single", difficulty="medium"):

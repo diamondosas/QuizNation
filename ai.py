@@ -14,7 +14,7 @@ def generate_quiz_question(subject=None, difficulty=None):
     {"question": "text", "options": ["A", "B", "C", "D"], "answer": "correct_option_text"}
     """
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        model = genai.GenerativeModel('gemini-2.5-pro')
         response = model.generate_content(prompt + format_instr)
         data = json.loads(response.text.strip().replace("```json", "").replace("```", "").strip())
         data["answer"] = data["options"].index(data["answer"])

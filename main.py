@@ -1,11 +1,13 @@
-import os, logging, random
-from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove, BotCommand
+import os
+import logging
+import random
+from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.constants import ParseMode
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from dotenv import load_dotenv
 
 from ai import generate_quiz_question
-from sessions import sessions, create_session, get_session, delete_session
+from sessions import create_session, get_session, delete_session
 
 load_dotenv()
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
