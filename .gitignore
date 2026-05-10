@@ -4,4 +4,3 @@ __pycache__/
 ais.py
 prompt.txt
 claude.md
-.gitignore
