@@ -1,3 +1,5 @@
+
+NOTE : BOT IS NOT CURRENTLY WORKING BEACUSE BACKEND SERVICE HAS EXPIRED
 # QuizNation - Telegram Quiz Bot
 
 ## Project Overview
